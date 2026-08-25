@@ -1,55 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Store Checkout System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Store Checkout System</title>
 </head>
 <body>
-  <h1>MINI STORE CHECKOUT SYSTEM</h1>
-
-  <div>
+    <h1>MINI STORE CHECKOUT SYSTEM</h1>
+    
     <label for="customerName">Customer Name</label>
-    <input type="text" id="customerName" placeholder="Enter customer name">
-  </div>
-
-  <br>
-
-  <div>
+    <input type="text" id="customerName"><br><br>
+    
     <label for="productCount">Number of Products</label>
-    <input type="number" id="productCount" min="1" placeholder="Enter number of products">
-  </div>
-
-  <br>
-
-  <!-- Container where product fields are dynamically generated -->
-  <div id="productsContainer"></div>
-
-  <br>
-
-  <div>
+    <input type="number" id="productCount"><br><br>
+    
+    <div id="productsContainer"></div>
+    
     <label for="deliveryOption">Delivery Option</label>
     <select id="deliveryOption">
-      <option value="1">Store Pickup</option>
-      <option value="2">Standard Delivery</option>
-      <option value="3">Express Delivery</option>
-    </select>
-  </div>
+        <option value="1">Store Pickup</option>
+        <option value="2">Standard Delivery</option>
+        <option value="3">Express Delivery</option>
+    </select><br><br>
+    
+    <button id="calculateBtn">Calculate Order</button>
+    
+    <div id="validationMessage"></div>
+    <div id="orderSummary"></div>
 
-  <br>
-
-  <button id="calculateBtn">Calculate Order</button>
-
-  <br><br>
-
-  <!-- Element for displaying validation errors -->
-  <div id="validationMessage" style="color: red;"></div>
-
-  <br>
-
-  <!-- Element for displaying final order summary output -->
-  <pre id="orderSummary"></pre>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
